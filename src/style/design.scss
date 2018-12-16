@@ -1,0 +1,35 @@
+@import "./reset.scss";
+@import "./variables.scss";
+@import "./mixins.scss";
+
+body {
+  header {
+  }
+  footer {
+  }
+  .counter {
+    text-align: center;
+    margin: 50px;
+    a:first-child {
+      display: inline-block;
+      border: 1px solid blue;
+      height: 50px;
+      width: 50px;
+      text-align: center;
+      line-height: 40px;
+      font-size: 40px;
+    }
+    a:last-child {
+      display: inline-block;
+      border: 1px solid red;
+      height: 50px;
+      width: 50px;
+      text-align: center;
+      line-height: 40px;
+      font-size: 40px;
+    }
+    span {
+      margin: 50px;
+    }
+  }
+}
