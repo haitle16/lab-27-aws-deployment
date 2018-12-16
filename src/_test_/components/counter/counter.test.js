@@ -9,10 +9,12 @@ describe("<Counter />", () => {
     let app = shallow(<Header />);
     expect(app.find("h1").exists()).toBeTruthy();
   });
+
   it("span count prove of life", () => {
     let app = shallow(<Counter />);
     expect(app.find("span.count").exists()).toBeTruthy();
   });
+
   it("changes state on Decrement click", () => {
     let app = mount(<Counter />);
     let aTag = app.find("a.down.clicker");
@@ -20,6 +22,7 @@ describe("<Counter />", () => {
     expect(app.state("count")).toBe(-1);
     expect(app.find("a.down.clicker").text()).toBe("-");
   });
+
   it("changes state on Increment click", () => {
     let app = mount(<Counter />);
     let aTag = app.find("a.up.clicker");
@@ -27,4 +30,10 @@ describe("<Counter />", () => {
     expect(app.state("count")).toBe(1);
     expect(app.find("a.up.clicker").text()).toBe("+");
   });
+
+  it('snapshot render test', () => {
+    const tree = renderer.create(<Counter />).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
 });
