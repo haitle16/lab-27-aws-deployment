@@ -3,6 +3,7 @@
 
 ## Project Name
 
+[![Build Status](https://travis-ci.com/haitle16/lab-27-aws-deployment.svg?branch=master)](https://travis-ci.com/haitle16/lab-27-aws-deployment)
 ### Author: Student/Group Name
 
 ### Links and Resources
