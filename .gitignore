@@ -4,8 +4,7 @@ db
 temp
 build
 aws.yml
-.environment
-.env
+package-lock.json
 
 # Created by https://www.gitignore.io/api/vim,osx,node,linux,windows
 ### Linux ###
@@ -144,5 +143,8 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# next.js
+.next
 
 # End of https://www.gitignore.io/api/vim,osx,node,linux,windows
